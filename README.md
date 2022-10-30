@@ -7,7 +7,7 @@ Program Algoritma Pemrosesan Akar Persamaan Metode Bolzano
 
 Penjelasan Program:
 
-Misalkan fungsi yang diketahui: X^3 - 2x^2 + 4x - 8
+Misalkan fungsi yang diketahui: x^3 - 2x^2 + 4x - 8
 
 1. Import Library
 ```python
