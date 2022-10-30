@@ -7,7 +7,7 @@ Program Algoritma Pemrosesan Akar Persamaan Metode Bolzano
 
 Penjelasan Program:
 
-Misalkan fungsi yang diketahui: x^3 - 2x^2 + 4x - 8
+Misalkan fungsi yang diketahui: x^3 - 3x + 1
 
 ## 1. Import Libraries
 ```python
@@ -44,7 +44,7 @@ def show(data,x1,x2):
     df = pd.DataFrame(data,columns=['x1','f(x1)','x2','f(x2)','x3','f(x3)'])
     print(df)
     x = np.linspace(x1,x2)
-    f = lambda x: x**3 - 2*x**2 + 4*x - 8
+    f = lambda x: x**3 - 3*x + 1
     y = f(x)
     plt.plot(x,y)
     plt.show()
