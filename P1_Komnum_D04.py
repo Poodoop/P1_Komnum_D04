@@ -3,7 +3,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pip import main
-##make bisection method
+
+##make bisection method.
 data = []
 
 def bisection(f, a, b, tol=1e-5):
