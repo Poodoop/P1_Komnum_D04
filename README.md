@@ -9,16 +9,16 @@ Penjelasan Program:
 
 Misalkan fungsi yang diketahui: x^3 - 2x^2 + 4x - 8
 
-1. Import Libraries
+## 1. Import Libraries
 ```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pip import main
 ```
-Library yang perlu diimport agar dapat menjalankan program python adalah 
+Library yang perlu diimport agar dapat menjalankan program python adalah numpy untuk pembuatan array dan matplotlib untuk pembuatan grafik.
 
-2. Bisection Method
+## 2. Bisection Method
 ```python
 def bisection(f, a, b, tol=1e-5):
     if f(a)*f(b) > 0:
@@ -36,7 +36,9 @@ def bisection(f, a, b, tol=1e-5):
             a = c
     return (a+b)/2.0,a,b
 ```
-3. Show Results
+Fungsi bisection ini menerapkan metode pencarian akar persamaan Bolzano, dimana nilai tengah dari selang x dicari agar semakin mendekati akar yang tepat. Fungsi akan memasukkan data-data x dan f(x) ke dalam array data yang dibuat.
+
+## 3. Show Results
 ```python
 def show(data,x1,x2):
     df = pd.DataFrame(data,columns=['x1','f(x1)','x2','f(x2)','x3','f(x3)'])
@@ -47,14 +49,8 @@ def show(data,x1,x2):
     plt.plot(x,y)
     plt.show()
 ```
-4. fungsi main
-```python
-if __name__ == '__main__':
-    root,x1,x2= bisection(lambda x: x**3 - 2*x**2 + 4*x - 8)
-    print(x1,x2)
-    print("root is",root,"and f(root) is",root**3 - 2*root**2 + 4*root - 8)
-    show(data,x1,x2)
-```
+Fungsi show akan menunjukkan iterasi-iterasi dan grafik dari data yang dihasilkan fungsi bisection.
+
 Hasil Print Iterasi:
 
 ![image](https://user-images.githubusercontent.com/55837575/198862907-b60e4ec7-b037-49d5-8440-c2b5dcdc98ab.png)
