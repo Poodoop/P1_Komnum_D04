@@ -9,13 +9,14 @@ Penjelasan Program:
 
 Misalkan fungsi yang diketahui: x^3 - 2x^2 + 4x - 8
 
-1. Import Library
+1. Import Libraries
 ```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pip import main
 ```
+Library yang perlu diimport agar dapat menjalankan program python adalah 
 
 2. Bisection Method
 ```python
