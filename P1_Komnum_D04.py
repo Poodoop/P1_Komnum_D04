@@ -28,7 +28,7 @@ def show(data,x1,x2):
     print(df)
     ## make graph from df
     x = np.linspace(x1,x2)
-    f = lambda x: x**3 - 2*x**2 + 4*x - 8
+    f = lambda x: x**3 - 3 *x + 1
     y = f(x)
     plt.plot(x,y)
     plt.show()
